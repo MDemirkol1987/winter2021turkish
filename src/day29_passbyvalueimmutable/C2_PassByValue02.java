@@ -1,0 +1,40 @@
+package day29_passbyvalueimmutable;
+
+public class C2_PassByValue02 {
+
+	public static void main(String[] args) {
+		
+		/*Soru2 : Verilen bir fiyat icin %10 , %20, %25 indirim yapan uc method olusturun.
+		  - Method’da indirim uygulayip fiyati main method’da yazdirin
+		  - Method’lari arka arkaya cagirip dogru calistiklarini kontrol edin*/
+		
+		double fiyat=100;
+		indirimUygulaOn(fiyat);
+		System.out.println("%10 indirimli fiyat: "+indirimUygulaOn(fiyat));
+		System.out.println("%20 indirimli fiyat: "+indirimUygulaYirmi(fiyat));
+		System.out.println("%20 indirimli fiyat: "+indirimUygulaOtuz(fiyat));
+		
+	}
+
+	public static double indirimUygulaOtuz(double fiyat) {
+		
+		fiyat*=0.75;
+		
+		return fiyat;
+	}
+
+	public static double indirimUygulaYirmi(double fiyat) {
+		
+		fiyat*=0.80;
+		
+		return fiyat;
+	}
+
+	public static double indirimUygulaOn(double fiyat) {
+		
+		fiyat*=0.09;
+		
+		return fiyat;
+	}
+
+}
